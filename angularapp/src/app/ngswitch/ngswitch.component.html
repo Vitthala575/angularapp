@@ -1,0 +1,43 @@
+<!-- <div class="container">
+    <div class="col-md-4">
+        <select class="form-control" (change)="getProductValue($event)">
+            <option value="Default">Select Product</option>
+            <option value="Laptop">Laptop</option>
+            <option value="Mobile">Mobile</option>
+            <option value="TV">TV</option>
+            <option value="Washing Machine">Washing Machine</option>
+        </select>
+    </div>
+    <div class="col-md-12" [ngSwitch]="selectedProduct">
+        <h2 class="text-success" *ngSwitchDefault>Please select product</h2>
+        <h2 class="text-success" *ngSwitchCase="'Laptop'">Laptop</h2>
+        <h2 class="text-success" *ngSwitchCase="'Mobile'">Mobile</h2>
+        <h2 class="text-success" *ngSwitchCase="'TV'">TV</h2>
+        <h2 class="text-success" *ngSwitchCase="'Washing Machine'">Washing Machine</h2>
+
+    </div>
+</div> -->
+<h1>This is assignment on ngswitch</h1>
+<div class="container">
+    <div class="col-md-4 text-center">
+        <select class="xx form-control " (change)="getProductValue($event)">
+            <option value="Default">Select Country</option>
+            <option value="India">India</option>
+            <option value="Japan">Japan</option>
+            <option value="Austrelia">Austrelia</option>
+            <option value="Nepal">Nepal</option>
+            <option value="America">America</option>
+            <option value="Kanada">Canada</option>
+        </select>
+    </div><br><br>
+    <div class="col-md-12 bg-light" [ngSwitch]="selectedProduct">
+        <h2 class="text-success" *ngSwitchDefault>Country not selected</h2>
+        <h2 class="text-success" *ngSwitchCase="'India'">India</h2>
+        <h2 class="text-success" *ngSwitchCase="'Japan'">Japan</h2>
+        <h2 class="text-success" *ngSwitchCase="'Austrelia'">Austrelia</h2>
+        <h2 class="text-success" *ngSwitchCase="'Nepal'">Nepal</h2>
+        <h2 class="text-success" *ngSwitchCase="'America'">America</h2>
+        <h2 class="text-success" *ngSwitchCase="'Kanada'">Canada</h2>
+
+    </div>
+</div>

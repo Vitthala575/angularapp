@@ -1,0 +1,9 @@
+<button (click)="show()">Click me </button>
+<h3>Innterpolation</h3>
+{{name}}
+<div [innerHTML]="description"></div>
+<img [src]="imageurl">
+<div>
+    user name:<input type="text"[(ngmodel)="lastname"]>
+</div>
+<div>{{lastname}}</div>
